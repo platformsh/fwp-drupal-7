@@ -16,7 +16,7 @@ build:
 # The build-time dependencies of the app.
 dependencies:
   php:
-    "drush/drush": "^7.0"
+    "drush/drush": "^8.0"
 
 # The relationships of the application with services or other applications.
 #
@@ -81,7 +81,7 @@ web:
                     expires: 2w
 
 # The size of the persistent disk of the application (in MB).
-disk: 2048
+disk: 3072
 
 # The mounts that will be performed when the package is deployed.
 mounts:
