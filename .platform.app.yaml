@@ -89,10 +89,10 @@ mounts:
     '/tmp': 'shared:files/tmp'
     '/private': 'shared:files/private'
     '/drush-backups': 'shared:files/drush-backups'
-    '/public/sites/default/private': 'shared:files/default-private'
-    '/public/sites/all': 'shared:files/all'
-    '/public/modules': 'shared:files/modules'
-    '/public/themes': 'shared:files/themes'
+    #'/public/sites/default/private': 'shared:files/default-private'
+    #'/public/sites/all': 'shared:files/all'
+    #'/public/modules': 'shared:files/modules'
+    #'/public/themes': 'shared:files/themes'
 
 # The hooks executed at various points in the lifecycle of the application.
 hooks:
