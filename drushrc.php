@@ -6,10 +6,10 @@
 if (PHP_SAPI === 'cli' && isset($_ENV['PLATFORM_ROUTES']) && isset($_ENV['PLATFORM_APPLICATION_NAME'])) {
   $routes = json_decode(base64_decode($_ENV['PLATFORM_ROUTES']), TRUE);
   $expected_route_urls = [
-    'https://{default}/',
-    'https://www.{default}/',
-    'http://{default}/',
-    'http://www.{default}/',
+    'https://{all}/',
+    'https://www.{all}/',
+    'http://{all}/',
+    'http://www.{all}/',
   ];
   foreach ($routes as $url => $route) {
     if ($route['type'] === 'upstream'
