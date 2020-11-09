@@ -90,7 +90,7 @@ mounts:
         source_path: 'files/files'
     '/tmp':
         source: local
-        source_path: 'files/tmp'
+        source_path: 'tmp'
     '/private':
         source: local
         source_path: 'files/private'
