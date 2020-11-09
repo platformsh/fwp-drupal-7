@@ -87,28 +87,28 @@ disk: 2048
 mounts:
     '/public/sites/default/files':
         source: local
-        source_path: 'files/files'
+        source_path: 'files'
     '/tmp':
         source: local
         source_path: 'tmp'
     '/private':
         source: local
-        source_path: 'files/private'
+        source_path: 'private'
     '/drush-backups':
         source: local
-        source_path: 'files/drush-backups'
+        source_path: 'drush-backups'
     # '/public/sites/default/private':
     #     source: local
-    #     source_path: 'files/default-private'
+    #     source_path: 'default-private'
     # '/public/sites/all':
     #     source: local
-    #     source_path: 'files/all'
+    #     source_path: 'all'
     # '/public/modules':
     #     source: local
-    #     source_path: 'files/modules'
+    #     source_path: 'modules'
     # '/public/themes':
     #     source: local
-    #     source_path: 'files/themes'
+    #     source_path: 'themes'
 
 # The hooks executed at various points in the lifecycle of the application.
 hooks:
