@@ -100,9 +100,9 @@ mounts:
     # '/public/sites/default/private':
     #     source: local
     #     source_path: 'default-private'
-    # '/public/sites/all':
-    #     source: local
-    #     source_path: 'all'
+    '/public/sites/all':
+        source: local
+        source_path: 'all'
     # '/public/modules':
     #     source: local
     #     source_path: 'modules'
@@ -116,6 +116,12 @@ hooks:
     deploy: |
         set -e
         cd public
+        if [ ! -d "sites/all/{libraries,modules,themes}" ]; 
+        then 
+            mkdir -p sites/all/libraries;
+            mkdir -p sites/all/modules/contrib;
+            mkdir -p sites/all/themes/contrib; 
+        fi
         drush -y updatedb
 
     # The configuration of scheduled execution.
